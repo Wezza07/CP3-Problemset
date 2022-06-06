@@ -16,8 +16,7 @@ typedef tree<int, null_type, less<int>, rb_tree_tag, tree_order_statistics_node_
 typedef tree<int , null_type ,  less_equal<int> , rb_tree_tag , tree_order_statistics_node_update> ordered_multiset;
 
 bool neighbour(bitset<15> a , bitset<15> b){
-    bitset<15> c = a^b;
-    return c.count() == 1;
+    return (a^b).count() == 1;
 }
 
 int main() {
