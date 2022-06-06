@@ -29,8 +29,7 @@ int main() {
         int w[1<<n] , ans[1<<n];
         for (int i = 0; i < (1<<n) ; ++i) {
             cin >> w[i];
-            bitset<15> tmp(i);
-            c[i] = tmp;
+            c[i] = i;
         }
         for (int i = 0; i < (1<<n); ++i) {
             int pot = 0;
